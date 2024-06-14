@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+body {
+
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background: url(Screenshot\ 2024-05-11\ 000133.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.navbar img{
+    width: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    backdrop-filter: blur(16px) saturate(180%);
+    background: transparent;
+    border-radius: 12px;
+    border: 1px solid #ff6600;
+    position: relative;
+    top: 10px;
+}
+
+.nav-1 a{
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-1 a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff6600;
+    transition: width 0.3s ease;
+}
+.nav-1 a:hover{
+    color: #ff6600;
+}
+.nav-1 a:hover::after{
+    width: 100%;
+}
+.nav-2 a{
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-2 a:hover{
+    color: #ff6600;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+}
+
+.btn,
+.btn1{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease color 0.3 ease;
+}
+.btn{
+    background-color: #ff6600;
+    color: white;
+}
+.btn1{
+    background-color: white;
+    color: #333;
+    border: 2px solid #ff6600;
+}
+.btn:hover,
+.btn1:hover{
+    background-color: #e65c00;
+    color: white;
+}
+.btn i,
+.btn1 i{
+    margin-right: 5px;
+}
+.manu{
+    background-color: #ff6600;
+    padding: 5px;
+}
+
+/*---nav-end---*/
+
+.rating{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 8rem;
+    bottom: 5rem;
+}
+.rating span{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.rating .stars i{
+    cursor: pointer;
+    padding: 2px;
+    transition: color 0.3s;
+}
+
+.rating .stars i.active{
+    color: #ff6600;
+}
+.rating .message{
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+
+/*rating-end*/
+
+.order{
+    width: 19%;
+    height: 43vh;
+    position: absolute;
+    right: 17rem;
+    top: 15rem;
+    background-color: #ff6600;
+    text-align: center;
+}
+.order p{
+    margin-top: 14rem;
+    font-size: 1.4rem;
+    color: white;
+}
+.order i{
+    color: white;
+}
+
+.order span{
+    margin-right: 8px;
+    color: white;
+    
+}
+
+.order button{
+    margin-top: 20rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: black;
+    color: white;
+}
+
+.salad img{
+    width: 31%;
+    position: absolute;
+    right: 13rem;
+    top: 8rem;
+    filter: drop-shadow(2px 4px 25px black);
+}
+
+.order-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    position: absolute;
+    left: 5rem;
+    top: 10rem;
+}
+
+.your {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.your span{
+    font-size: 73px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+
+}
+.order p{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 0;
+}
+.your p{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 0;
+}
+.your b{
+    color: #ff6600;
+    margin-left: 30px;
+
+}
+.order-2 p{
+    font-size: 21px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 38%;
+}
+.order-2 p span{
+    font-weight: bold;
+    color: black;
+}
+.order-2 a{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.order-2 button{
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.order-2 button:hover{
+    background-color: #e65c00;
+}
+.order-2 button i{
+    margin-right: 5px;
+}
+
+.sp{
+    position: absolute;
+    top: 54px;
+    left: 48rem;
+    background-color: red;
+    border-radius: 50%;
+    padding-left: 9px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-right: 9px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 4rem;
+    left: -12rem;
+}
+.corner{
+    display: flex;
+    overflow: hidden;
+    border: 2px solid #ff6600;
+    background-color: white;
+    box-shadow: 0px 12px 25px black;
+    width: 38%;
+}
+.slider-container{
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 30%;
+
+}
+.slider-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 18px;
+    height: 8rem;
+    width: 6rem;
+    box-shadow: 0 0 10px black;
+}
+.slider-image span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+.slider-image p{
+    font-size: 14px;
+    color: #ff6600;
+}
+.fa-arrow-left,
+.fa-arrow-right {
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 2 black;
+}
+.fa-arrow-left:hover,
+.fa-arrow-right:hover{
+    color: #ff6600;
+}
+
+.navbar,
+.rating,
+.order,
+.salad,
+.order-2,
+.sp,
+.slider{
+    transition: all 0.5s ease;
+}
